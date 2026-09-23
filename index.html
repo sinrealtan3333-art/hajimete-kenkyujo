@@ -10,66 +10,193 @@
   <meta property="og:description" content="人生の「はじめて」を、調べて、試して、わかりやすく。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hajimete-kenkyujo.com/">
+  <meta name="theme-color" content="#05090a">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+<div class="noise" aria-hidden="true"></div>
+
 <header class="site-header">
-  <a class="brand" href="/"><span>HAJIMETE</span> はじめて研究所<span class="cursor">_</span></a>
-  <nav><a href="#research">研究中</a><a href="#labs">研究室</a><a href="#policy">研究方針</a><a href="#reports">レポート</a></nav>
+  <a class="brand" href="/" aria-label="はじめて研究所 トップ">
+    <span class="brand-kicker">HAJIMETE KENKYUJO</span>
+    <span class="brand-main">はじめて研究所<span class="cursor">_</span></span>
+  </a>
+  <nav aria-label="メインナビゲーション">
+    <a href="#research"><span>01</span>研究中</a>
+    <a href="#labs"><span>02</span>研究室</a>
+    <a href="#policy"><span>03</span>研究方針</a>
+    <a href="#reports"><span>04</span>レポート</a>
+  </nav>
+  <div class="header-status"><i></i> FACILITY ONLINE</div>
 </header>
 
 <main>
-<section class="hero">
-  <div class="grid"></div>
+<section class="hero" id="top">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-beam beam-a" aria-hidden="true"></div>
+  <div class="hero-beam beam-b" aria-hidden="true"></div>
+
   <div class="hero-inner">
-    <p class="eyebrow">HAJIMETE KENKYUJO / FIELD RESEARCH MEDIA</p>
+    <div class="hero-id">
+      <span>FIELD RESEARCH MEDIA</span>
+      <b>FACILITY / 001</b>
+    </div>
+    <p class="eyebrow">HAJIMETE KENKYUJO</p>
     <h1>はじめては、<br><em>わからない。</em></h1>
     <p class="lead">だから、調べる。試す。比べる。</p>
     <p class="sub">仕事、子育て、デジタル、暮らし。人生で初めて経験する「これ、どうすればいい？」を、実際に研究します。</p>
-    <div class="actions"><a class="btn primary" href="#reports">研究レポートを見る</a><a class="btn" href="#request">研究を依頼する</a></div>
-  </div>
-  <div class="lab-console" aria-hidden="true">
-    <div class="screen"><b>LAB STATUS</b><span>ONLINE</span><i></i><i></i><i></i></div>
-    <div class="screen data"><b>RESEARCH LOG</b><code>001 / ACTIVE<br>DAY 0<br>COST ¥—</code></div>
-  </div>
-</section>
-
-<section id="research" class="section dark">
-  <div class="section-head"><p>NOW RESEARCHING</p><h2>現在研究中</h2></div>
-  <article class="research-card">
-    <div class="number">001</div>
-    <div><p class="status">● RESEARCHING</p><h3>初めてサーバー代0円でメディアを作って、Google AdSense取得を目指してみた。</h3>
-      <div class="meta"><span>START 2026.09.23</span><span>HOSTING ¥0</span><span>STATUS 進行中</span></div>
-      <p>この「はじめて研究所」そのものが最初の研究。制作、公開、検索流入、AdSense審査、収益化まで数字と失敗を含めて記録します。</p>
+    <div class="actions">
+      <a class="btn primary" href="#reports">研究レポートを見る <span>↗</span></a>
+      <a class="btn" href="#request">研究を依頼する</a>
     </div>
-  </article>
-</section>
+    <div class="hero-footnote"><span>EST. 2026.09.23</span><span>SERVER COST ¥0</span><span>STATUS / ACTIVE</span></div>
+  </div>
 
-<section id="labs" class="section">
-  <div class="section-head"><p>RESEARCH LABS</p><h2>研究室</h2></div>
-  <div class="labs">
-    <article><span>LAB 01</span><h3>こども研究室</h3><p>スマホ、ゲーム、SNS、AI、習い事。親子で初めて向き合うテーマを研究。</p></article>
-    <article><span>LAB 02</span><h3>しごと研究室</h3><p>副業、リモートワーク、業務委託、AI活用。新しい働き方を実践して検証。</p></article>
-    <article><span>LAB 03</span><h3>くらし研究室</h3><p>買い物、旅行、車、サービス、手続き。知らないまま選びにくいことを研究。</p></article>
+  <div class="lab-stage" aria-hidden="true">
+    <div class="ceiling"><i></i><i></i><i></i></div>
+    <div class="pillar p1"></div>
+    <div class="pillar p2"></div>
+    <div class="glass-wall"></div>
+    <div class="monitor-wall">
+      <div class="monitor m1"><small>LAB STATUS</small><strong>ONLINE</strong><span class="pulse-line"></span><span class="pulse-line short"></span></div>
+      <div class="monitor m2"><small>RESEARCH LOG</small><strong>001 / ACTIVE</strong><code>DAY 0<br>COST ¥0<br>DEPLOYED</code></div>
+      <div class="monitor m3"><small>INDEX</small><b>00.01</b><div class="bars"><i></i><i></i><i></i><i></i></div></div>
+    </div>
+    <div class="workbench">
+      <div class="desk-screen"><span>HJK-01</span><i></i><i></i><i></i></div>
+      <div class="desk-light"></div>
+    </div>
+    <div class="floor-lines"></div>
+    <div class="lab-caption">RESEARCH FACILITY / SECTOR A</div>
   </div>
 </section>
 
-<section id="policy" class="section policy">
-  <div class="section-head"><p>OUR POLICY</p><h2>「やってみた」を、ちゃんと研究する。</h2></div>
-  <div class="process"><div><b>01</b><span>調べる</span></div><div><b>02</b><span>実際にやる</span></div><div><b>03</b><span>数字を取る</span></div><div><b>04</b><span>まとめる</span></div></div>
-  <p class="policy-copy">AIで情報をまとめるだけではなく、公式情報を確認し、可能なものは実際に試し、費用・時間・結果・失敗まで記録します。</p>
+<section id="research" class="section research-zone">
+  <div class="section-shell">
+    <div class="section-head">
+      <div><p>NOW RESEARCHING</p><h2>現在研究中</h2></div>
+      <span class="section-code">LIVE / 001</span>
+    </div>
+
+    <article class="research-card">
+      <div class="research-index">
+        <span>RESEARCH</span>
+        <div class="number">001</div>
+        <i></i>
+        <small>ACTIVE</small>
+      </div>
+      <div class="research-body">
+        <p class="status"><i></i> RESEARCHING NOW</p>
+        <h3>初めてサーバー代0円でメディアを作って、Google AdSense取得を目指してみた。</h3>
+        <p class="research-desc">この「はじめて研究所」そのものが最初の研究。制作、公開、検索流入、AdSense審査、収益化まで、数字と失敗を含めて記録します。</p>
+        <div class="research-stats">
+          <div><small>START</small><b>2026.09.23</b></div>
+          <div><small>HOSTING</small><b>¥0 / MONTH</b></div>
+          <div><small>DEPLOY</small><b>CLOUDFLARE</b></div>
+          <div><small>STATUS</small><b>進行中</b></div>
+        </div>
+        <div class="progress">
+          <div class="progress-head"><span>RESEARCH PROGRESS</span><span>PHASE 01</span></div>
+          <div class="track"><i style="width:26%"></i></div>
+          <div class="milestones"><span class="done">環境構築</span><span>初回公開</span><span>検索流入</span><span>AdSense</span></div>
+        </div>
+      </div>
+    </article>
+  </div>
 </section>
 
-<section id="reports" class="section">
-  <div class="section-head"><p>NEW REPORTS</p><h2>最新研究レポート</h2></div>
-  <div class="empty-report"><span>REPORT 001 / PREPARING</span><h3>研究結果を記録中です。</h3><p>公開までの過程そのものを、最初の研究レポートとして残していきます。</p></div>
+<section id="labs" class="section labs-zone">
+  <div class="section-shell">
+    <div class="section-head">
+      <div><p>RESEARCH LABS</p><h2>研究室</h2></div>
+      <span class="section-code">03 SECTORS</span>
+    </div>
+
+    <div class="labs">
+      <article class="lab-card">
+        <div class="lab-top"><span>LAB 01</span><i>CHILD / DIGITAL</i></div>
+        <div class="lab-visual visual-child"><span class="ring"></span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div>
+        <h3>こども研究室</h3>
+        <p>スマホ、ゲーム、SNS、AI、習い事。親子で初めて向き合うテーマを研究。</p>
+        <div class="lab-bottom"><span>ENTER LAB</span><b>→</b></div>
+      </article>
+
+      <article class="lab-card">
+        <div class="lab-top"><span>LAB 02</span><i>WORK / SYSTEM</i></div>
+        <div class="lab-visual visual-work"><span></span><span></span><span></span><span></span></div>
+        <h3>しごと研究室</h3>
+        <p>副業、リモートワーク、業務委託、AI活用。新しい働き方を実践して検証。</p>
+        <div class="lab-bottom"><span>ENTER LAB</span><b>→</b></div>
+      </article>
+
+      <article class="lab-card">
+        <div class="lab-top"><span>LAB 03</span><i>LIFE / CHOICE</i></div>
+        <div class="lab-visual visual-life"><span></span><span></span><span></span></div>
+        <h3>くらし研究室</h3>
+        <p>買い物、旅行、車、サービス、手続き。知らないまま選びにくいことを研究。</p>
+        <div class="lab-bottom"><span>ENTER LAB</span><b>→</b></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="policy" class="section policy-zone">
+  <div class="section-shell policy-layout">
+    <div class="policy-intro">
+      <div class="section-head compact">
+        <div><p>OUR POLICY</p><h2>「やってみた」を、<br>ちゃんと研究する。</h2></div>
+      </div>
+      <p>AIで情報をまとめるだけではなく、公式情報を確認し、可能なものは実際に試す。費用、時間、結果、失敗まで記録して、判断材料として残します。</p>
+      <div class="policy-seal"><span>VERIFIED BY</span><b>EXPERIENCE</b><small>HJK / EDITORIAL POLICY</small></div>
+    </div>
+
+    <div class="process">
+      <div><b>01</b><span>調べる</span><small>RESEARCH</small></div>
+      <div><b>02</b><span>実際にやる</span><small>TEST</small></div>
+      <div><b>03</b><span>数字を取る</span><small>MEASURE</small></div>
+      <div><b>04</b><span>まとめる</span><small>REPORT</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="reports" class="section reports-zone">
+  <div class="section-shell">
+    <div class="section-head">
+      <div><p>NEW REPORTS</p><h2>最新研究レポート</h2></div>
+      <span class="section-code">ARCHIVE / 0001</span>
+    </div>
+    <article class="report-card">
+      <div class="report-thumb">
+        <span class="scan"></span>
+        <div class="report-terminal"><small>RESEARCH 001</small><b>DEPLOYMENT LOG</b><code>GITHUB → CLOUDFLARE<br>STATUS: ONLINE<br>DOMAIN: PREPARING</code></div>
+      </div>
+      <div class="report-copy">
+        <div class="report-labels"><span>WEB</span><span>実験中</span><span>2026.09.23</span></div>
+        <h3>サーバー代0円のメディアは、本当に運営できるのか。</h3>
+        <p>ドメイン取得、GitHub連携、Cloudflare Pages公開まで。初日の作業を研究ログとして記録中です。</p>
+        <span class="report-link">REPORT PREPARING <b>→</b></span>
+      </div>
+    </article>
+  </div>
 </section>
 
 <section id="request" class="cta">
-  <p>RESEARCH REQUEST</p><h2>あなたの「はじめて」、<br>研究します。</h2><p>「これ、誰か実際に試してくれないかな？」というテーマを募集予定です。</p><a class="btn primary" href="mailto:">研究依頼フォーム準備中</a>
+  <div class="portal" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="cta-inner">
+    <p>RESEARCH REQUEST / OPEN</p>
+    <h2>あなたの「はじめて」、<br>研究します。</h2>
+    <p>「これ、誰か実際に試してくれないかな？」というテーマを研究依頼として募集予定です。</p>
+    <span class="btn disabled">研究依頼フォーム準備中</span>
+  </div>
 </section>
 </main>
 
-<footer><a href="/">はじめて研究所</a><div><a href="/about.html">研究所について</a><a href="/privacy.html">プライバシーポリシー</a></div><small>© 2026 HAJIMETE KENKYUJO</small></footer>
+<footer>
+  <div class="footer-brand"><b>はじめて研究所<span>_</span></b><small>HAJIMETE KENKYUJO / FIELD RESEARCH MEDIA</small></div>
+  <div class="footer-links"><a href="/about.html">研究所について</a><a href="/privacy.html">プライバシーポリシー</a></div>
+  <div class="footer-status"><i></i> SYSTEM ONLINE</div>
+  <small class="copyright">© 2026 HAJIMETE KENKYUJO</small>
+</footer>
 <script src="/script.js"></script>
-</body></html>
+</body>
+</html>
