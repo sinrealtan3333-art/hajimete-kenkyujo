@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" rx="28" fill="#081018"/>
+  <rect x="44" y="42" width="1312" height="676" rx="22" fill="#0d1820" stroke="#23313a" stroke-width="2"/>
+  <text x="82" y="104" fill="#84ff00" font-family="Arial,'Noto Sans JP',sans-serif" font-size="24" font-weight="700">RESEARCH 001 / STEP 09</text>
+  <text x="82" y="154" fill="#ffffff" font-family="Arial,'Noto Sans JP',sans-serif" font-size="36" font-weight="700">データストリームは「ウェブ」</text>
+  <text x="82" y="198" fill="#8aa0ad" font-family="Arial,'Noto Sans JP',sans-serif" font-size="20">サイトURLとストリーム名を設定する。</text>
+  
+  <rect x="180" y="285" width="1040" height="300" rx="22" fill="#ffffff"/>
+  <text x="230" y="340" fill="#17252d" font-family="Arial,'Noto Sans JP'" font-size="24" font-weight="700">プラットフォームを選択</text>
+  <rect x="230" y="385" width="300" height="100" rx="14" fill="#eef6ff" stroke="#4285f4" stroke-width="3"/><text x="380" y="448" text-anchor="middle" fill="#24599c" font-family="Arial,'Noto Sans JP'" font-size="24" font-weight="700">🌐 ウェブ</text>
+  <rect x="570" y="385" width="260" height="100" rx="14" fill="#f7f9fa" stroke="#d2dbe0"/><text x="700" y="448" text-anchor="middle" fill="#6b7b84" font-family="Arial" font-size="21">Android</text>
+  <rect x="870" y="385" width="260" height="100" rx="14" fill="#f7f9fa" stroke="#d2dbe0"/><text x="1000" y="448" text-anchor="middle" fill="#6b7b84" font-family="Arial" font-size="21">iOS</text>
+  <text x="230" y="545" fill="#3d4d56" font-family="Arial" font-size="20">URL: https://hajimete-kenkyujo.com</text>
+  </svg>

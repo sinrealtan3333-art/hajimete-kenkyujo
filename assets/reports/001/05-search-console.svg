@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" rx="28" fill="#081018"/>
+  <rect x="44" y="42" width="1312" height="676" rx="22" fill="#0d1820" stroke="#23313a" stroke-width="2"/>
+  <text x="82" y="104" fill="#84ff00" font-family="Arial,'Noto Sans JP',sans-serif" font-size="24" font-weight="700">RESEARCH 001 / STEP 05</text>
+  <text x="82" y="154" fill="#ffffff" font-family="Arial,'Noto Sans JP',sans-serif" font-size="36" font-weight="700">Search Console は「ドメイン」で登録</text>
+  <text x="82" y="198" fill="#8aa0ad" font-family="Arial,'Noto Sans JP',sans-serif" font-size="20">https:// は付けず、ドメイン名だけ入力。</text>
+  
+  <rect x="190" y="270" width="1020" height="330" rx="22" fill="#ffffff"/>
+  <rect x="245" y="325" width="420" height="210" rx="16" fill="#eef5f1" stroke="#9bcbb0" stroke-width="3"/>
+  <text x="455" y="385" text-anchor="middle" fill="#1c3328" font-family="Arial,'Noto Sans JP'" font-size="29" font-weight="700">ドメイン</text>
+  <text x="275" y="430" fill="#43554d" font-family="Arial,'Noto Sans JP'" font-size="18">・すべてのサブドメイン</text><text x="275" y="462" fill="#43554d" font-family="Arial,'Noto Sans JP'" font-size="18">・http / https をまとめて管理</text>
+  <rect x="735" y="325" width="420" height="210" rx="16" fill="#f8fafb" stroke="#d6dee3"/>
+  <text x="945" y="385" text-anchor="middle" fill="#6b7880" font-family="Arial,'Noto Sans JP'" font-size="27">URLプレフィックス</text>
+  <text x="245" y="575" fill="#1f2d35" font-family="Arial" font-size="22">入力：hajimete-kenkyujo.com</text>
+  </svg>

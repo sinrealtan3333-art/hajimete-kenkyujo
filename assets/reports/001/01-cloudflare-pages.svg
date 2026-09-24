@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" rx="28" fill="#081018"/>
+  <rect x="44" y="42" width="1312" height="676" rx="22" fill="#0d1820" stroke="#23313a" stroke-width="2"/>
+  <text x="82" y="104" fill="#84ff00" font-family="Arial,'Noto Sans JP',sans-serif" font-size="24" font-weight="700">RESEARCH 001 / STEP 01</text>
+  <text x="82" y="154" fill="#ffffff" font-family="Arial,'Noto Sans JP',sans-serif" font-size="36" font-weight="700">GitHub → Cloudflare Pages → 公開</text>
+  <text x="82" y="198" fill="#8aa0ad" font-family="Arial,'Noto Sans JP',sans-serif" font-size="20">まずはサイトを公開できる状態にする。</text>
+  
+  <rect x="120" y="290" width="280" height="170" rx="18" fill="#111f28" stroke="#36505f"/>
+  <text x="260" y="350" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="30" font-weight="700">GitHub</text>
+  <text x="260" y="395" text-anchor="middle" fill="#8aa0ad" font-family="Arial" font-size="19">HTML / CSS / JS</text>
+  <path d="M430 375 H610" stroke="#84ff00" stroke-width="8" stroke-linecap="round"/><path d="M590 355 L620 375 L590 395" fill="#84ff00"/>
+  <rect x="640" y="290" width="330" height="170" rx="18" fill="#111f28" stroke="#36505f"/>
+  <text x="805" y="350" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="30" font-weight="700">Cloudflare Pages</text>
+  <text x="805" y="395" text-anchor="middle" fill="#8aa0ad" font-family="Arial" font-size="19">main ブランチを自動デプロイ</text>
+  <path d="M1000 375 H1130" stroke="#84ff00" stroke-width="8" stroke-linecap="round"/><path d="M1110 355 L1140 375 L1110 395" fill="#84ff00"/>
+  <rect x="1160" y="290" width="150" height="170" rx="18" fill="#152814" stroke="#84ff00"/>
+  <text x="1235" y="350" text-anchor="middle" fill="#84ff00" font-family="Arial" font-size="26" font-weight="700">公開</text>
+  <text x="1235" y="395" text-anchor="middle" fill="#dce7ef" font-family="Arial" font-size="18">pages.dev</text>
+  <rect x="120" y="515" width="1190" height="105" rx="16" fill="#0a1319" stroke="#23313a"/>
+  <text x="155" y="560" fill="#dce7ef" font-family="Arial,'Noto Sans JP'" font-size="22">ポイント：GitHubを更新すれば、Cloudflare Pages側も自動で更新される。</text>
+  <text x="155" y="595" fill="#8aa0ad" font-family="Arial,'Noto Sans JP'" font-size="18">サーバーを自分で管理しなくても、静的サイトを公開できる構成。</text>
+  </svg>

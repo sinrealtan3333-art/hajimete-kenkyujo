@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" rx="28" fill="#081018"/>
+  <rect x="44" y="42" width="1312" height="676" rx="22" fill="#0d1820" stroke="#23313a" stroke-width="2"/>
+  <text x="82" y="104" fill="#84ff00" font-family="Arial,'Noto Sans JP',sans-serif" font-size="24" font-weight="700">RESEARCH 001 / STEP 04</text>
+  <text x="82" y="154" fill="#ffffff" font-family="Arial,'Noto Sans JP',sans-serif" font-size="36" font-weight="700">URLを1本に統一</text>
+  <text x="82" y="198" fill="#8aa0ad" font-family="Arial,'Noto Sans JP',sans-serif" font-size="20">www と pages.dev を正式URLへ 301 リダイレクト。</text>
+  
+  <rect x="140" y="285" width="390" height="110" rx="16" fill="#111f28" stroke="#36505f"/><text x="335" y="350" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="22">www.hajimete-kenkyujo.com</text>
+  <rect x="140" y="445" width="390" height="110" rx="16" fill="#111f28" stroke="#36505f"/><text x="335" y="510" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="22">hajimete-kenkyujo.pages.dev</text>
+  <path d="M560 340 C720 340 700 420 825 420" stroke="#84ff00" fill="none" stroke-width="7"/><path d="M560 500 C720 500 700 420 825 420" stroke="#84ff00" fill="none" stroke-width="7"/>
+  <rect x="850" y="345" width="410" height="150" rx="18" fill="#152814" stroke="#84ff00" stroke-width="2"/>
+  <text x="1055" y="410" text-anchor="middle" fill="#84ff00" font-family="Arial" font-size="25" font-weight="700">正式URL</text>
+  <text x="1055" y="452" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="22">hajimete-kenkyujo.com</text>
+  <text x="140" y="620" fill="#8aa0ad" font-family="Arial,'Noto Sans JP'" font-size="20">Cloudflare Bulk Redirects を使い、恒久転送（301）で統一。</text>
+  </svg>
