@@ -89,3 +89,220 @@
   }
   .lab-visual{height:180px}
 }
+
+/* IMAGE QUALITY HOTFIX v0.4 */
+/* Keep the generated lab imagery, but never stretch the compressed source across a full section. */
+.hero{
+  position:relative;
+  isolation:isolate;
+  min-height:760px;
+  display:grid;
+  grid-template-columns:minmax(0,.92fr) minmax(520px,1.08fr);
+  align-items:center;
+  gap:42px;
+  background:
+    radial-gradient(circle at 75% 45%,rgba(31,117,122,.13),transparent 35%),
+    linear-gradient(135deg,#020707 0%,#04100f 48%,#061414 100%)!important;
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:0;
+  right:0;
+  bottom:0;
+  width:58%;
+  background:url('/assets/hero.webp') 58% center/cover no-repeat;
+  opacity:.86;
+  filter:blur(.55px) contrast(1.04) saturate(.92);
+  transform:scale(1.006);
+  transform-origin:center;
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  z-index:1;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,#020707 0%,rgba(2,7,7,.98) 33%,rgba(2,7,7,.76) 48%,rgba(2,7,7,.20) 72%,rgba(2,7,7,.28) 100%),
+    linear-gradient(180deg,rgba(0,0,0,.04),transparent 65%,rgba(0,0,0,.38));
+}
+.hero-inner{position:relative;z-index:4}
+.hero-grid{z-index:2;opacity:.055}
+.hero-beam{z-index:2;opacity:.22}
+.lab-stage{display:none!important}
+
+/* Treat the three small images like lab monitor feeds. Their rendered size stays close to source quality. */
+.lab-visual{
+  position:relative;
+  overflow:hidden;
+  height:170px;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+  filter:none;
+}
+.lab-visual:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg,rgba(2,8,8,.02),rgba(2,8,8,.22)),
+    repeating-linear-gradient(0deg,rgba(180,255,247,.025) 0 1px,transparent 1px 4px);
+}
+.lab-visual:after{
+  z-index:3;
+  box-shadow:inset 0 0 28px rgba(0,0,0,.28);
+}
+
+/* CTA: no raster background. A crisp vector-like blue/white research gateway replaces the blurry stretched image. */
+.cta{
+  position:relative;
+  min-height:520px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  text-align:left;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse at 78% 55%,rgba(88,238,232,.18) 0%,rgba(29,118,117,.10) 28%,transparent 55%),
+    linear-gradient(120deg,#020707 0%,#041211 54%,#071b1a 100%)!important;
+  border-top:1px solid #16342f;
+}
+.cta:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:.9;
+  background:
+    linear-gradient(90deg,transparent 0 7%,rgba(91,190,183,.08) 7.05% 7.15%,transparent 7.2% 15%,rgba(91,190,183,.05) 15.05% 15.15%,transparent 15.2% 100%),
+    repeating-linear-gradient(0deg,transparent 0 58px,rgba(114,221,214,.055) 59px 60px),
+    linear-gradient(180deg,rgba(255,255,255,.015),transparent 45%,rgba(0,0,0,.28));
+}
+.cta-inner{
+  position:relative;
+  z-index:5;
+  width:min(720px,48vw);
+  max-width:none;
+  margin-left:max(7vw,70px);
+  padding:60px 20px;
+}
+.cta h2{max-width:680px}
+.cta-inner>p:not(:first-child){max-width:680px;color:#9aada7}
+
+/* Re-purpose the existing portal element as a glass research-facility doorway. */
+.portal{
+  display:block!important;
+  position:absolute;
+  z-index:2;
+  left:auto;
+  right:9vw;
+  bottom:-18px;
+  width:min(400px,31vw);
+  height:395px;
+  border:1px solid rgba(130,246,238,.48);
+  border-radius:2px 2px 0 0;
+  background:
+    linear-gradient(90deg,rgba(2,12,12,.88) 0 10%,transparent 10% 90%,rgba(2,12,12,.88) 90%),
+    linear-gradient(180deg,rgba(207,255,252,.86) 0%,rgba(111,235,227,.36) 12%,rgba(22,104,101,.18) 42%,rgba(3,22,21,.32) 100%);
+  box-shadow:
+    0 0 0 14px rgba(27,82,78,.10),
+    0 0 55px rgba(82,229,219,.18),
+    inset 0 0 45px rgba(177,255,249,.14);
+  transform:none;
+}
+.portal:before{
+  content:"";
+  position:absolute;
+  inset:26px 34px 0;
+  border:1px solid rgba(183,255,251,.52);
+  border-bottom:0;
+  border-radius:2px 2px 0 0;
+  background:
+    radial-gradient(ellipse at 50% 12%,rgba(239,255,255,.98) 0%,rgba(164,247,242,.72) 9%,rgba(76,196,190,.22) 35%,rgba(6,35,34,.14) 67%,rgba(2,9,9,.35) 100%);
+  box-shadow:
+    0 -10px 42px rgba(212,255,252,.28),
+    inset 0 0 55px rgba(137,244,237,.20);
+}
+.portal:after{
+  content:"NEXT RESEARCH / GATE 01";
+  position:absolute;
+  left:50%;
+  top:18px;
+  transform:translateX(-50%);
+  white-space:nowrap;
+  font:8px/1 monospace;
+  letter-spacing:.18em;
+  color:#aefcf4;
+  text-shadow:0 0 12px rgba(103,255,241,.5);
+}
+.portal i{
+  position:absolute;
+  z-index:2;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:linear-gradient(180deg,rgba(207,255,252,.78),rgba(88,214,205,.10));
+  transform:none!important;
+}
+.portal i:nth-child(1){left:25%}
+.portal i:nth-child(2){left:50%}
+.portal i:nth-child(3){left:75%}
+.cta .btn{
+  background:rgba(2,12,11,.78);
+  border-color:#376a63;
+  backdrop-filter:blur(5px);
+}
+.cta .btn:hover{border-color:var(--neon);color:var(--neon)}
+
+@media(max-width:1050px){
+  .hero{
+    grid-template-columns:1fr;
+    min-height:760px;
+  }
+  .hero:before{
+    width:70%;
+    opacity:.50;
+    background-position:68% center;
+  }
+  .hero:after{
+    background:linear-gradient(90deg,#020707 0%,rgba(2,7,7,.96) 43%,rgba(2,7,7,.54) 72%,rgba(2,7,7,.30));
+  }
+  .cta-inner{width:58vw;margin-left:5vw}
+  .portal{right:4vw;width:34vw}
+}
+@media(max-width:760px){
+  .hero{
+    min-height:760px;
+    background:linear-gradient(180deg,#020707,#04100f)!important;
+  }
+  .hero:before{
+    width:100%;
+    height:46%;
+    top:auto;
+    bottom:0;
+    opacity:.42;
+    background-position:62% center;
+  }
+  .hero:after{
+    background:linear-gradient(180deg,#020707 0%,rgba(2,7,7,.98) 54%,rgba(2,7,7,.55) 78%,rgba(2,7,7,.36));
+  }
+  .lab-visual{height:185px}
+  .cta{min-height:560px;align-items:flex-start}
+  .cta-inner{
+    width:auto;
+    max-width:none;
+    margin:0;
+    padding:64px 24px 280px;
+  }
+  .portal{
+    left:50%;
+    right:auto;
+    width:280px;
+    height:245px;
+    bottom:-15px;
+    transform:translateX(-50%);
+  }
+}
