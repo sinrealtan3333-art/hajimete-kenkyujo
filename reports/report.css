@@ -1,0 +1,45 @@
+.report-page{background:#f3f6f5;color:#15201d;min-height:100vh}
+.article-site-header{background:rgba(3,7,8,.96)}
+.report-hero{position:relative;overflow:hidden;background:#030708;color:#edf5f1;min-height:610px;display:flex;align-items:flex-end}
+.report-hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,7,8,.96) 0%,rgba(3,7,8,.88) 46%,rgba(3,7,8,.38) 73%,rgba(3,7,8,.72) 100%),url('/assets/top-lab.webp') 72% center/cover no-repeat;filter:saturate(.75)}
+.report-hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,#57e8d6,transparent);opacity:.45}
+.report-hero-inner{position:relative;z-index:2;width:min(1180px,90vw);margin:0 auto;padding:100px 0 76px}
+.breadcrumb{display:inline-block;font-size:12px;color:#8fa49e;margin-bottom:42px}.breadcrumb:hover{color:#9cff00}
+.report-badge{display:inline-flex;border:1px solid #2b5f57;color:#9cff00;background:rgba(9,25,22,.72);padding:8px 12px;font:700 10px ui-monospace,monospace;letter-spacing:.16em;margin-bottom:20px}
+.report-category{color:#57e8d6;font:700 11px ui-monospace,monospace;letter-spacing:.18em;margin:0 0 14px}
+.report-hero h1{max-width:1030px;font-size:clamp(38px,5vw,70px);line-height:1.17;letter-spacing:-.045em;margin:0 0 26px;font-weight:950}
+.report-intro{max-width:830px;color:#b5c5c0;font-size:16px;line-height:1.9}
+.report-meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:34px;color:#708780;font:10px ui-monospace,monospace;letter-spacing:.08em}
+.report-layout{width:min(1220px,92vw);margin:0 auto;display:grid;grid-template-columns:210px minmax(0,820px);gap:70px;justify-content:center;padding:82px 0 120px}
+.report-toc{position:sticky;top:112px;align-self:start;border-left:1px solid #c9d5d1;padding:8px 0 8px 18px;display:flex;flex-direction:column;gap:9px}
+.report-toc p{font:700 10px ui-monospace,monospace;letter-spacing:.18em;color:#778984;margin:0 0 9px}
+.report-toc a{font-size:12px;color:#677975;padding:2px 0}.report-toc a:hover{color:#356b38}
+.report-article{min-width:0}
+.report-lead{font-size:18px;line-height:2.05;border-bottom:1px solid #d7dfdc;padding-bottom:54px}.report-lead strong{background:linear-gradient(transparent 62%,#dcffc1 62%)}
+.article-section{padding:70px 0;border-bottom:1px solid #d7dfdc;scroll-margin-top:100px}
+.section-number{font:700 10px ui-monospace,monospace;letter-spacing:.18em;color:#6a8d80;margin-bottom:10px}
+.article-section h2{font-size:clamp(30px,4vw,48px);line-height:1.35;letter-spacing:-.04em;margin:0 0 30px;color:#0e1916}
+.article-section h3{font-size:24px;line-height:1.5;margin:10px 0}
+.article-section p{font-size:16px;line-height:2;margin:18px 0;color:#384944}
+.article-section strong{color:#111c18}
+.article-section code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#e7eeeb;padding:2px 6px;border-radius:4px;font-size:.9em}
+figure{margin:38px 0 40px;background:#081018;border-radius:18px;overflow:hidden;border:1px solid #c7d3cf;box-shadow:0 20px 50px rgba(10,30,24,.08)}
+figure img{display:block;width:100%;height:auto}
+figcaption{background:#fff;color:#64746f;font-size:12px;padding:13px 17px;border-top:1px solid #d8e1de}
+.karte-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid #cad6d2;background:#fff}
+.karte-grid div{padding:18px 20px;border-bottom:1px solid #dde5e2}.karte-grid div:nth-child(odd){border-right:1px solid #dde5e2}
+.karte-grid span{display:block;color:#80908b;font-size:11px;margin-bottom:4px}.karte-grid b{font-size:14px}.karte-grid .live{color:#3f7f29}
+.research-note,.result-box,.trap-box,.important-box{margin:34px 0;padding:25px 28px;border-left:4px solid #79c844;background:#fff;box-shadow:0 12px 35px rgba(9,31,23,.05)}
+.research-note small,.result-box small,.trap-box small,.important-box small{font:800 10px ui-monospace,monospace;letter-spacing:.15em;color:#649640}
+.research-note p,.result-box p,.trap-box p,.important-box p{margin:8px 0 0}.result-box b{display:block;font:800 21px ui-monospace,monospace;color:#1a3025;margin:10px 0}
+.trap-box{border-left-color:#dd8b32;background:#fffaf4}.trap-box small{color:#b66a1d}
+.important-box{border-left-color:#9cff00;background:#0a1410;color:#edf5f1}.important-box h3{color:#9cff00}.important-box p{color:#b6c6c0}
+.point-box{background:#fff;border:1px solid #d3ddd9;padding:22px 26px;margin:30px 0}.point-box b{font-size:15px}.point-box ul{margin:12px 0 0;padding-left:1.4em}.point-box li{margin:8px 0}
+pre{overflow:auto;background:#081018;color:#bfffa1;padding:24px;border-radius:14px;font-size:13px;line-height:1.75;margin:28px 0}
+.caption-note{font-size:12px!important;color:#74827e!important}
+.status-table{background:#fff;border:1px solid #ccd8d4}.status-table div{display:flex;justify-content:space-between;gap:20px;padding:14px 18px;border-bottom:1px solid #e0e7e4}.status-table div:last-child{border-bottom:0}.status-table span{color:#6f817a}.status-table b{color:#327029}.status-table .pending{color:#a97027}
+.check-list,.next-list{padding-left:1.5em}.check-list li,.next-list li{margin:12px 0;line-height:1.8}
+.ongoing{margin-top:42px;padding:34px;background:#0a1410;color:#edf5f1;border:1px solid #213c33}.ongoing span{font:700 10px ui-monospace,monospace;letter-spacing:.18em;color:#9cff00}.ongoing h3{color:#edf5f1;font-size:30px}.ongoing p{color:#aebeb8;margin-bottom:0}
+.article-end{text-align:center;padding:95px 20px 30px}.article-end p{color:#687a73}.article-end h2{font-size:clamp(36px,5vw,58px);line-height:1.35;letter-spacing:-.04em;margin:14px 0 38px;color:#0e1916}
+@media(max-width:980px){.report-layout{grid-template-columns:1fr;width:min(820px,90vw);gap:0}.report-toc{display:none}.report-hero-inner{padding-top:80px}.report-hero{min-height:560px}}
+@media(max-width:760px){.report-hero{min-height:650px}.report-hero-bg{background-position:70% center}.report-hero-inner{padding:70px 0 56px}.report-hero h1{font-size:38px}.report-intro{font-size:14px}.report-layout{width:calc(100% - 36px);padding-top:50px}.report-lead{font-size:16px}.article-section{padding:52px 0}.article-section h2{font-size:31px}.karte-grid{grid-template-columns:1fr}.karte-grid div:nth-child(odd){border-right:0}.research-note,.result-box,.trap-box,.important-box{padding:21px}.status-table div{align-items:flex-start;flex-direction:column;gap:3px}}
