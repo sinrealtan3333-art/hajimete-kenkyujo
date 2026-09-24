@@ -306,3 +306,103 @@
     transform:translateX(-50%);
   }
 }
+
+/* HERO FINISH v0.5 */
+.hero{
+  min-height:760px;
+  background:
+    radial-gradient(circle at 68% 40%,rgba(46,153,157,.10),transparent 34%),
+    linear-gradient(135deg,#020707 0%,#04100f 54%,#061414 100%)!important;
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:54px;
+  right:3.5vw;
+  bottom:54px;
+  width:57%;
+  background:
+    linear-gradient(90deg,rgba(2,7,7,.10),rgba(2,7,7,0) 18%),
+    url('/assets/hero-hq.avif') 56% center/cover no-repeat;
+  opacity:.98;
+  filter:none;
+  transform:none;
+  border:1px solid rgba(116,241,231,.20);
+  box-shadow:
+    0 0 0 1px rgba(38,93,87,.18),
+    0 0 70px rgba(49,171,160,.08),
+    inset 0 0 70px rgba(0,0,0,.18);
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  z-index:1;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,#020707 0%,rgba(2,7,7,.99) 28%,rgba(2,7,7,.84) 39%,rgba(2,7,7,.30) 53%,rgba(2,7,7,.05) 76%,rgba(2,7,7,.20) 100%),
+    linear-gradient(180deg,rgba(0,0,0,.02),transparent 68%,rgba(0,0,0,.34));
+}
+.hero-inner{
+  position:relative;
+  z-index:4;
+  max-width:720px;
+}
+.hero-id{
+  position:relative;
+  padding-right:18px;
+}
+.hero-id:after{
+  content:"LAB VISUAL / LIVE";
+  position:absolute;
+  right:-34vw;
+  top:-1px;
+  font:8px/1 monospace;
+  letter-spacing:.17em;
+  color:#9ff7ee;
+  opacity:.72;
+}
+.hero-footnote{
+  position:relative;
+}
+.hero-footnote:after{
+  content:"RESEARCH FACILITY / SECTOR A";
+  position:absolute;
+  left:calc(100% + 44px);
+  white-space:nowrap;
+  font:8px/1 monospace;
+  letter-spacing:.14em;
+  color:#5e8c84;
+}
+@media(max-width:1050px){
+  .hero:before{
+    top:42px;
+    right:0;
+    bottom:42px;
+    width:63%;
+    opacity:.78;
+    background-position:62% center;
+  }
+  .hero:after{
+    background:
+      linear-gradient(90deg,#020707 0%,rgba(2,7,7,.98) 38%,rgba(2,7,7,.62) 62%,rgba(2,7,7,.20) 100%),
+      linear-gradient(180deg,rgba(0,0,0,.02),transparent 65%,rgba(0,0,0,.32));
+  }
+  .hero-id:after,.hero-footnote:after{display:none}
+}
+@media(max-width:760px){
+  .hero{min-height:820px}
+  .hero:before{
+    top:auto;
+    right:16px;
+    bottom:24px;
+    width:calc(100% - 32px);
+    height:315px;
+    opacity:.90;
+    background-position:center;
+  }
+  .hero:after{
+    background:linear-gradient(180deg,#020707 0%,rgba(2,7,7,.99) 55%,rgba(2,7,7,.62) 74%,rgba(2,7,7,.14) 100%);
+  }
+}
