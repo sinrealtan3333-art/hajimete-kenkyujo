@@ -34,3 +34,11 @@
 /* Research 001 CTA */
 .research-open{display:inline-flex;align-items:center;gap:18px;margin-top:28px;padding:13px 18px;border:1px solid var(--neon);color:#07100f;background:var(--neon);font:800 12px/1.2 Inter,"Noto Sans JP","Yu Gothic",sans-serif;letter-spacing:.04em;position:relative;z-index:5;transition:.2s;box-shadow:0 0 22px rgba(156,255,0,.08)}
 .research-open b{font-size:16px}.research-open:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(156,255,0,.12)}
+
+/* Daily research update card */
+.report-update-card{margin-bottom:18px}
+.report-update-card .update-thumb{background:
+radial-gradient(circle at 74% 34%,rgba(156,255,0,.14),transparent 22%),
+linear-gradient(145deg,#071412,#030707)}
+.report-update-card .report-terminal{border-color:#395e33}
+.report-update-card .report-terminal b{color:var(--neon)}
