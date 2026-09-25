@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<rect width="1400" height="760" rx="28" fill="#081018"/>
+<text x="70" y="80" fill="#84ff00" font-family="Arial,'Noto Sans JP'" font-size="22" font-weight="700">RESEARCH 002 / WHY IT CHANGES</text>
+<text x="70" y="130" fill="#fff" font-family="Arial,'Noto Sans JP'" font-size="34" font-weight="700">手残りを動かす3つのレバー</text>
+
+<circle cx="125" cy="235" r="34" fill="#84ff00"/><text x="125" y="245" text-anchor="middle" fill="#07100f" font-family="Arial" font-size="28" font-weight="700">1</text>
+<text x="190" y="230" fill="#fff" font-family="Arial,'Noto Sans JP'" font-size="28" font-weight="700">社会保険</text>
+<text x="190" y="270" fill="#9db0aa" font-family="Arial,'Noto Sans JP'" font-size="18">会社員は給与ベース。個人事業は国保＋国民年金。法人化すると厚生年金・健康保険へ。</text>
+<circle cx="125" cy="365" r="34" fill="#84ff00"/><text x="125" y="375" text-anchor="middle" fill="#07100f" font-family="Arial" font-size="28" font-weight="700">2</text>
+<text x="190" y="360" fill="#fff" font-family="Arial,'Noto Sans JP'" font-size="28" font-weight="700">控除</text>
+<text x="190" y="400" fill="#9db0aa" font-family="Arial,'Noto Sans JP'" font-size="18">給与所得控除と青色申告65万円は性質が違う。副業事業所得なら両方が効くことがある。</text>
+<circle cx="125" cy="495" r="34" fill="#84ff00"/><text x="125" y="505" text-anchor="middle" fill="#07100f" font-family="Arial" font-size="28" font-weight="700">3</text>
+<text x="190" y="490" fill="#fff" font-family="Arial,'Noto Sans JP'" font-size="28" font-weight="700">経費</text>
+<text x="190" y="530" fill="#9db0aa" font-family="Arial,'Noto Sans JP'" font-size="18">必要経費は『使った30万円が戻る』制度ではない。課税対象を減らす仕組み。</text>
+</svg>

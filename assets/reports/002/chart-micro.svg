@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<rect width="1400" height="760" rx="28" fill="#081018"/>
+<text x="70" y="80" fill="#84ff00" font-family="Arial,'Noto Sans JP'" font-size="22" font-weight="700">RESEARCH 002 / MICRO COMPANY</text>
+<text x="70" y="130" fill="#fff" font-family="Arial,'Noto Sans JP'" font-size="34" font-weight="700">マイクロ法人は「個人の財布」と「法人の財布」を分けて見る</text>
+<text x="70" y="170" fill="#8aa0ad" font-family="Arial,'Noto Sans JP'" font-size="18">個人400万円＋法人100万円／役員報酬 月5万円モデル</text>
+<rect x="110" y="270" width="1150" height="85" rx="14" fill="#11281f"/>
+<rect x="110" y="270" width="1080" height="85" rx="14" fill="#84ff00"/>
+<rect x="1190" y="270" width="70" height="85" rx="0" fill="#57e8d6"/>
+<text x="650" y="323" text-anchor="middle" fill="#07100f" font-family="Arial,'Noto Sans JP'" font-size="28" font-weight="700">個人で使える現金 約376.2万円</text>
+<text x="1225" y="323" text-anchor="middle" fill="#07100f" font-family="Arial" font-size="20" font-weight="700">13.6</text>
+<text x="110" y="410" fill="#dce7ef" font-family="Arial,'Noto Sans JP'" font-size="23">個人の手残り</text>
+<text x="430" y="410" fill="#84ff00" font-family="Arial" font-size="34" font-weight="700">376.2万円</text>
+<text x="110" y="468" fill="#dce7ef" font-family="Arial,'Noto Sans JP'" font-size="23">法人内部留保（概算）</text>
+<text x="430" y="468" fill="#57e8d6" font-family="Arial" font-size="34" font-weight="700">13.6万円</text>
+<line x1="110" y1="505" x2="810" y2="505" stroke="#294039"/>
+<text x="110" y="560" fill="#fff" font-family="Arial,'Noto Sans JP'" font-size="25" font-weight="700">合計で管理下に残る資金：約389.7万円</text>
+<text x="110" y="620" fill="#9db0aa" font-family="Arial,'Noto Sans JP'" font-size="18">ただし法人のお金は個人のお金ではありません。自由に生活費へ使えば給与・配当・貸付等の論点が生じます。</text>
+</svg>

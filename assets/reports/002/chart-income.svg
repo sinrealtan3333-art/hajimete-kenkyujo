@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<rect width="1400" height="760" rx="28" fill="#081018"/>
+<text x="70" y="80" fill="#84ff00" font-family="Arial,'Noto Sans JP'" font-size="22" font-weight="700">RESEARCH 002 / TAXABLE INCOME</text>
+<text x="70" y="130" fill="#fff" font-family="Arial,'Noto Sans JP'" font-size="34" font-weight="700">「収入500万円」でも、課税のスタート地点はこんなに違う</text>
+<text x="70" y="168" fill="#8aa0ad" font-family="Arial,'Noto Sans JP'" font-size="18">給与所得控除・必要経費・青色申告特別控除を反映した所得金額。単位：万円</text>
+
+<text x="70" y="248" fill="#dce7ef" font-family="Arial,'Noto Sans JP'" font-size="22">会社員一本</text>
+<rect x="430" y="220" width="623" height="44" rx="8" fill="#18332f"/>
+<rect x="430" y="220" width="623" height="44" rx="8" fill="#57e8d6"/>
+<text x="1073" y="249" fill="#fff" font-family="Arial" font-size="22" font-weight="700">356</text>
+<text x="70" y="348" fill="#dce7ef" font-family="Arial,'Noto Sans JP'" font-size="22">会社員400＋副業100</text>
+<rect x="430" y="320" width="491.75" height="44" rx="8" fill="#18332f"/>
+<rect x="430" y="320" width="491.75" height="44" rx="8" fill="#57e8d6"/>
+<text x="941.75" y="349" fill="#fff" font-family="Arial" font-size="22" font-weight="700">281</text>
+<text x="70" y="448" fill="#dce7ef" font-family="Arial,'Noto Sans JP'" font-size="22">個人事業主一本</text>
+<rect x="430" y="420" width="708.75" height="44" rx="8" fill="#18332f"/>
+<rect x="430" y="420" width="708.75" height="44" rx="8" fill="#57e8d6"/>
+<text x="1158.75" y="449" fill="#fff" font-family="Arial" font-size="22" font-weight="700">405</text>
+<text x="70" y="548" fill="#dce7ef" font-family="Arial,'Noto Sans JP'" font-size="22">個人400＋マイクロ法人100</text>
+<rect x="430" y="520" width="533.75" height="44" rx="8" fill="#18332f"/>
+<rect x="430" y="520" width="533.75" height="44" rx="8" fill="#57e8d6"/>
+<text x="983.75" y="549" fill="#fff" font-family="Arial" font-size="22" font-weight="700">305</text>
+<text x="70" y="650" fill="#9db0aa" font-family="Arial,'Noto Sans JP'" font-size="18">副業100万円は「事業所得」として青色65万円控除を使える前提。雑所得ならこの形にはなりません。</text>
+</svg>

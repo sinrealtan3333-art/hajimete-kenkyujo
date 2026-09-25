@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<rect width="1400" height="760" rx="28" fill="#081018"/>
+<text x="70" y="80" fill="#84ff00" font-family="Arial,'Noto Sans JP'" font-size="22" font-weight="700">RESEARCH 002 / TAKE-HOME</text>
+<text x="70" y="130" fill="#fff" font-family="Arial,'Noto Sans JP'" font-size="34" font-weight="700">年収・売上500万円モデル：個人で使える年間手残り</text>
+<text x="70" y="168" fill="#8aa0ad" font-family="Arial,'Noto Sans JP'" font-size="18">2026年制度・40〜64歳・扶養なし・概算。単位：万円</text>
+
+<text x="70" y="248" fill="#dce7ef" font-family="Arial,'Noto Sans JP'" font-size="22">会社員一本</text>
+<rect x="430" y="220" width="796.425" height="44" rx="8" fill="#17352d"/>
+<rect x="430" y="220" width="796.425" height="44" rx="8" fill="#84ff00" opacity="0.88"/>
+<text x="1246.425" y="249" fill="#fff" font-family="Arial" font-size="22" font-weight="700">388.5</text>
+<text x="70" y="348" fill="#dce7ef" font-family="Arial,'Noto Sans JP'" font-size="22">会社員400＋副業100</text>
+<rect x="430" y="320" width="784.5349999999999" height="44" rx="8" fill="#17352d"/>
+<rect x="430" y="320" width="784.5349999999999" height="44" rx="8" fill="#84ff00" opacity="0.88"/>
+<text x="1234.5349999999999" y="349" fill="#fff" font-family="Arial" font-size="22" font-weight="700">382.7</text>
+<text x="70" y="448" fill="#dce7ef" font-family="Arial,'Noto Sans JP'" font-size="22">個人事業主一本</text>
+<rect x="430" y="420" width="704.9949999999999" height="44" rx="8" fill="#17352d"/>
+<rect x="430" y="420" width="704.9949999999999" height="44" rx="8" fill="#84ff00" opacity="0.55"/>
+<text x="1154.995" y="449" fill="#fff" font-family="Arial" font-size="22" font-weight="700">343.9</text>
+<text x="70" y="548" fill="#dce7ef" font-family="Arial,'Noto Sans JP'" font-size="22">個人400＋マイクロ法人100</text>
+<rect x="430" y="520" width="771.2099999999999" height="44" rx="8" fill="#17352d"/>
+<rect x="430" y="520" width="771.2099999999999" height="44" rx="8" fill="#84ff00" opacity="0.88"/>
+<text x="1221.21" y="549" fill="#fff" font-family="Arial" font-size="22" font-weight="700">376.2</text>
+<text x="70" y="650" fill="#9db0aa" font-family="Arial,'Noto Sans JP'" font-size="18">※マイクロ法人は「個人で使える現金」のみ。法人内に残る約13.6万円は含めていません。</text>
+<text x="70" y="684" fill="#9db0aa" font-family="Arial,'Noto Sans JP'" font-size="18">※会社員一本は事業経費30万円が発生しない前提。他3ケースは事業経費30万円を差し引いています。</text>
+</svg>
