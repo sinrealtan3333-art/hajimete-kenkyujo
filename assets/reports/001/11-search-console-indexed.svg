@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<rect width="1400" height="760" rx="28" fill="#081018"/>
+<rect x="44" y="42" width="1312" height="676" rx="22" fill="#0d1820" stroke="#23313a" stroke-width="2"/>
+<text x="82" y="104" fill="#84ff00" font-family="Arial,'Noto Sans JP',sans-serif" font-size="24" font-weight="700">RESEARCH 001 / SEARCH CONSOLE</text>
+<text x="82" y="154" fill="#ffffff" font-family="Arial,'Noto Sans JP',sans-serif" font-size="36" font-weight="700">Googleインデックス登録を確認</text>
+<text x="82" y="198" fill="#8aa0ad" font-family="Arial,'Noto Sans JP',sans-serif" font-size="20">公開翌日、研究001の記事URLをURL検査で確認。</text>
+
+<rect x="145" y="270" width="1110" height="310" rx="18" fill="#ffffff"/>
+<text x="200" y="330" fill="#53636d" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18">URL 検査</text>
+<circle cx="220" cy="405" r="22" fill="#17a05d"/>
+<path d="M209 405 l8 8 l17 -19" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="265" y="417" fill="#182326" font-family="Arial,'Noto Sans JP',sans-serif" font-size="30" font-weight="700">URL は Google に登録されています</text>
+
+<rect x="200" y="465" width="1000" height="68" rx="10" fill="#f5f7f8" stroke="#dde5e3"/>
+<circle cx="228" cy="499" r="9" fill="#17a05d"/>
+<text x="255" y="507" fill="#26343b" font-family="Arial,'Noto Sans JP',sans-serif" font-size="20">ページはインデックスに登録済みです</text>
+<text x="900" y="507" fill="#60717a" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18">HTTPS：正常</text>
+
+<rect x="145" y="615" width="1110" height="62" rx="12" fill="#10231c" stroke="#245a3d"/>
+<text x="180" y="654" fill="#84ff00" font-family="Arial,'Noto Sans JP',sans-serif" font-size="20">✓ インデックス登録を確認。次は検索表示回数・クリックを追跡。</text>
+</svg>
