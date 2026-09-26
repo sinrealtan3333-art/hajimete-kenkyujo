@@ -42,3 +42,8 @@ radial-gradient(circle at 74% 34%,rgba(156,255,0,.14),transparent 22%),
 linear-gradient(145deg,#071412,#030707)}
 .report-update-card .report-terminal{border-color:#395e33}
 .report-update-card .report-terminal b{color:var(--neon)}
+
+/* Work lab photo */
+.visual-work-photo{padding:0;display:block;background:#040909}
+.visual-work-photo:before{display:none}
+.visual-work-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
