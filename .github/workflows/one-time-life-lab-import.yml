@@ -1,0 +1,29 @@
+name: one-time-life-lab-import
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  import-original:
+    if: ${{ github.actor != 'github-actions[bot]' && contains(github.event.head_commit.message, '[import-life-lab]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import exact original image
+        env:
+          SOURCE_URL: 'https://sdmntprjapaneast.oaiusercontent.com/files/00000000-b184-8209-8243-d6508b292ee8/raw?se=2026-09-26T16%3A30%3A27Z&sp=r&sv=2026-02-06&sr=b&scid=4844106b-071b-5ad3-bf15-d9ca4805e545&skoid=fe2e0858-51c5-47e9-acb7-46ebb9a0f396&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-25T22%3A09%3A46Z&ske=2026-09-26T22%3A09%3A46Z&sks=b&skv=2026-02-06&sig=IzefkPjwiwSXMasRZPaHUOBn7ybTGmbYQB7xE7X77%2B4%3D'
+        run: |
+          set -euo pipefail
+          mkdir -p assets/labs
+          curl --fail --location --retry 2 "$SOURCE_URL" --output assets/labs/life-lab-original.png
+          test "$(stat -c%s assets/labs/life-lab-original.png)" = "3468358"
+          echo "4246732fadd01be29b8b3c6ae0a1903e4fad8a9e6191f05e0d90f88bc64044b8  assets/labs/life-lab-original.png" | sha256sum -c -
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/labs/life-lab-original.png
+          git commit -m "Add original life lab image"
+          git push
