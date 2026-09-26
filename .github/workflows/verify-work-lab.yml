@@ -1,0 +1,52 @@
+name: Verify live work lab image
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/verify-work-lab.yml"
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Cloudflare and verify exact original
+        shell: bash
+        run: |
+          set -euo pipefail
+          IMAGE_URL="https://hajimete-kenkyujo.com/assets/labs/work-lab-original.png?v=20260927-original"
+          HOME_URL="https://hajimete-kenkyujo.com/"
+          EXPECTED_SIZE="3075232"
+          EXPECTED_SHA256="e23c845ffc2231ed3bdea2f06c30862564173bd4e62a1fbe6b3c573ae829297d"
+
+          ok=0
+          for i in $(seq 1 24); do
+            echo "Attempt $i/24"
+            code=$(curl -L -sS -o /tmp/work-lab.png -w "%{http_code}" "$IMAGE_URL" || true)
+            size=$(stat -c%s /tmp/work-lab.png 2>/dev/null || echo 0)
+            sha=$(sha256sum /tmp/work-lab.png 2>/dev/null | awk '{print $1}' || true)
+            echo "HTTP=$code bytes=$size sha256=$sha"
+            if [ "$code" = "200" ] && [ "$size" = "$EXPECTED_SIZE" ] && [ "$sha" = "$EXPECTED_SHA256" ]; then
+              ok=1
+              break
+            fi
+            sleep 10
+          done
+
+          [ "$ok" = "1" ] || { echo "Exact live image did not verify"; exit 1; }
+
+          python - <<'PY'
+          import struct
+          p="/tmp/work-lab.png"
+          with open(p,"rb") as f:
+              sig=f.read(24)
+          assert sig[:8] == b"\x89PNG\r\n\x1a\n", sig[:8]
+          w,h=struct.unpack(">II",sig[16:24])
+          print(f"PNG dimensions={w}x{h}")
+          assert (w,h)==(1672,941)
+          PY
+
+          curl -L -fsS "$HOME_URL" -o /tmp/home.html
+          grep -Fq '/assets/labs/work-lab-original.png?v=20260927-original' /tmp/home.html
+          echo "LIVE_VERIFY_OK exact original PNG + homepage reference confirmed"
