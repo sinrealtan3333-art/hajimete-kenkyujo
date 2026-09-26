@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<rect width="1400" height="760" rx="28" fill="#081018"/>
+<text x="70" y="82" fill="#84ff00" font-family="Arial,'Noto Sans JP',sans-serif" font-size="22" font-weight="700">RESEARCH 001 / GA4 TRAFFIC CHECK</text>
+<text x="70" y="132" fill="#fff" font-family="Arial,'Noto Sans JP',sans-serif" font-size="34" font-weight="700">アクセス23人。でも「23人の読者」とは限らなかった。</text>
+<text x="70" y="172" fill="#8aa0ad" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18">GA4の国別・流入元・エンゲージメントを確認した結果</text>
+
+<rect x="70" y="220" width="390" height="180" rx="18" fill="#102019" stroke="#284d3b"/>
+<text x="100" y="262" fill="#9db0aa" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18">アクティブユーザー</text>
+<text x="100" y="330" fill="#84ff00" font-family="Arial" font-size="64" font-weight="700">23</text>
+<text x="100" y="368" fill="#dce7ef" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18">見た目では「意外と来た？」</text>
+
+<rect x="505" y="220" width="390" height="180" rx="18" fill="#102019" stroke="#284d3b"/>
+<text x="535" y="262" fill="#9db0aa" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18">日本ユーザー</text>
+<text x="535" y="330" fill="#57e8d6" font-family="Arial" font-size="64" font-weight="700">2</text>
+<text x="535" y="368" fill="#dce7ef" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18">平均エンゲージメント 4分05秒</text>
+
+<rect x="940" y="220" width="390" height="180" rx="18" fill="#102019" stroke="#284d3b"/>
+<text x="970" y="262" fill="#9db0aa" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18">海外アクセス</text>
+<text x="970" y="330" fill="#ffcf5a" font-family="Arial" font-size="64" font-weight="700">多</text>
+<text x="970" y="368" fill="#dce7ef" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18">多くがエンゲージメント0秒</text>
+
+<text x="70" y="470" fill="#fff" font-family="Arial,'Noto Sans JP',sans-serif" font-size="28" font-weight="700">流入元（セッション）</text>
+<text x="70" y="528" fill="#dce7ef" font-family="Arial,'Noto Sans JP',sans-serif" font-size="22">Direct</text>
+<rect x="255" y="500" width="860" height="38" rx="8" fill="#84ff00"/>
+<text x="1135" y="527" fill="#fff" font-family="Arial" font-size="22" font-weight="700">26</text>
+<text x="70" y="590" fill="#dce7ef" font-family="Arial,'Noto Sans JP',sans-serif" font-size="22">AI Assistant</text>
+<rect x="255" y="562" width="34" height="38" rx="8" fill="#57e8d6"/>
+<text x="309" y="589" fill="#fff" font-family="Arial" font-size="22" font-weight="700">1</text>
+<text x="70" y="652" fill="#dce7ef" font-family="Arial,'Noto Sans JP',sans-serif" font-size="22">Organic Search</text>
+<rect x="255" y="624" width="4" height="38" rx="2" fill="#52625d"/>
+<text x="279" y="651" fill="#fff" font-family="Arial" font-size="22" font-weight="700">0</text>
+
+<text x="70" y="716" fill="#9db0aa" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18">結論：Google検索からの実流入はまだ0。海外0秒アクセスは自動アクセス等の可能性が高いが断定はしない。</text>
+</svg>
