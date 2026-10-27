@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6C81J654P"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-F6C81J654P');</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>初めてAIで競艇予想に挑戦。1万円は増やせるのか？｜はじめて研究所</title>
+  <meta name="description" content="初期資金1万円、投票額はまだ0円。AIで競艇予想の精度を高められるか、1997～2025年の公式データ4日分671レースを読み込んで検証した研究記録。">
+  <link rel="canonical" href="https://hajimete-kenkyujo.com/reports/003/">
+  <meta property="og:title" content="初めてAIで競艇予想に挑戦。1万円は増やせるのか？">
+  <meta property="og:description" content="1万円を入金。でも、まだ1円も賭けていない。公式過去データ671レースの検証から始めたAI予想研究。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hajimete-kenkyujo.com/reports/003/">
+  <meta property="og:image" content="https://hajimete-kenkyujo.com/assets/top-lab.webp">
+  <meta name="theme-color" content="#05090a">
+  <link rel="stylesheet" href="/styles.css?v=20260926-5">
+  <link rel="stylesheet" href="/report.css?v=20260925-3">
+  <style>
+    .research-figure{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:30px 0 40px}
+    .research-figure>div{background:#091a16;color:#e5f5ef;border:1px solid #1d4d3e;padding:25px 16px;min-height:142px}
+    .research-figure small{display:block;color:#9db8ac;font:700 11px ui-monospace,Consolas,monospace;letter-spacing:.07em;margin-bottom:11px}
+    .research-figure strong{display:block;color:#b7ff76;font-size:clamp(26px,3.5vw,43px);line-height:1.2;font-weight:900;font-variant-numeric:tabular-nums}
+    .research-figure span{display:block;color:#afc5b9;font-size:12px;margin-top:10px}
+    .research-label{display:inline-block;padding:4px 11px;border:1px solid #85ad5d;background:#e7f2dc;color:#355e20;font-weight:800;font-size:12px;letter-spacing:.04em}
+    .result-note{padding:18px 22px;background:#e2ebe7;border-left:4px solid #407d5b;margin:28px 0 34px}
+    .result-note p{margin:0}
+    @media(max-width:640px){.research-figure{grid-template-columns:1fr;gap:8px}.research-figure>div{min-height:auto;padding:19px 20px}.research-figure strong{font-size:33px}}
+  </style>
+</head>
+<body class="report-page">
+<div class="noise" aria-hidden="true"></div>
+<header class="site-header">
+  <a class="brand" href="/" aria-label="はじめて研究所 トップ"><span class="brand-kicker">HAJIMETE KENKYUJO</span><span class="brand-main">はじめて研究所<span class="cursor">_</span></span></a>
+  <nav aria-label="メインナビゲーション"><a href="/#research"><span>01</span>研究中</a><a href="/#labs"><span>02</span>研究室</a><a href="/#policy"><span>03</span>研究方針</a><a href="/#reports"><span>04</span>レポート</a></nav>
+  <div class="header-status"><i></i> FACILITY ONLINE</div>
+</header>
+<main>
+  <section class="report-hero">
+    <div class="report-hero-bg"></div>
+    <div class="report-hero-inner">
+      <a class="back-link" href="/#reports">← レポート一覧へ戻る</a>
+      <div class="report-kicker">RESEARCH REPORT / 003 — IN PROGRESS</div>
+      <h1>初めてAIで競艇予想に挑戦。<br>1万円は増やせるのか？</h1>
+      <p>データを集めて、条件を紐解けば、予想の精度は上がるのか。1万円を入金して始めた研究の、最初の検証記録です。</p>
+      <div class="report-meta"><span>DATE / 2026.10.27</span><span>CATEGORY / くらし研究室</span><span>STATUS / 研究中</span><span>AUTHOR / 太郎所長</span></div>
+    </div>
+  </section>
+  <section class="article-shell">
+    <div class="article-layout">
+      <aside class="article-toc">
+        <div class="toc-panel">
+          <div class="toc-kicker">RESEARCH INDEX</div>
+          <div class="toc-title">この記事の目次</div>
+          <nav class="toc-nav" aria-label="記事内目次">
+            <a href="#start"><span>00</span>研究を始めた理由</a>
+            <a href="#budget"><span>01</span>初期資金1万円</a>
+            <a href="#axes"><span>02</span>4つの分析軸</a>
+            <a href="#source-data"><span>03</span>過去データを調査</a>
+            <a href="#findings"><span>04</span>671レースの検証結果</a>
+            <a href="#prediction"><span>05</span>的中と回収は別</a>
+            <a href="#limits"><span>06</span>現時点の限界</a>
+            <a href="#next"><span>07</span>次回の研究</a>
+            <a href="#references"><span>END</span>出典・注意事項</a>
+          </nav>
+        </div>
+      </aside>
+      <article class="article-body">
+        <p><span class="research-label">研究中 / 第1回レポート</span></p>
+        <p>AIを使って競艇を予想したら、勝てるのだろうか。</p>
+        <p>「AIなら何でも当ててくれる」とは思っていません。でも、過去のデータを十分に集め、選手やモーター、水面の条件まで調べれば、<strong>普通の予想では見えない規則性があるかもしれない。</strong></p>
+        <blockquote><p><strong>最初に結論から。</strong></p><p>1万円は入金しました。でも、まだ1円も賭けていません。そして、AIで勝てるという証拠も、まだありません。</p></blockquote>
+
+        <h2 id="start">研究を始めた理由</h2>
+        <p>競馬、競輪、競艇。データを活用して予想するなら、どの公営競技に可能性があるのか。いろいろ考えた結果、まずは競艇（ボートレース）を研究対象に選びました。</p>
+        <p>ただし、競艇がほかの公営競技より「勝ちやすい」と証明されたわけではありません。研究を始めるために選んだ対象であって、それ自体が今後の検証課題です。</p>
+        <p>今回やりたいのは、単純な1号艇の勝率集計ではありません。<strong>どの選手が、どの場の、どんな条件で強いのか</strong>を詳しく調べ、未経験のレースでも予測できるか確かめることです。</p>
+
+        <h2 id="budget">初期資金は1万円。隠さず記録する</h2>
+        <p>実際にボートレースの投票用アカウントを作り、研究資金として<strong>10,000円</strong>を入金しました。金額は最初から公開します。</p>
+        <div class="research-figure" aria-label="2026年10月27日時点の資金状況">
+          <div><small>DEPOSIT / 入金額</small><strong>¥10,000</strong><span>研究用に入金済み</span></div>
+          <div><small>BET / 購入額</small><strong>¥0</strong><span>まだ投票していない</span></div>
+          <div><small>BALANCE / 入金分</small><strong>¥10,000</strong><span>予測検証前につき温存</span></div>
+        </div>
+        <p>この研究は、勝った日の結果だけを紹介するものにはしません。実際に投票を始めたら、購入した予想、投票額、払戻額、損益、累計回収率を記録します。</p>
+        <p>AIが投票口座を操作するわけではなく、最終的な購入判断は人間が行います。<strong>予測精度を確かめるまでは、この1万円を使わない</strong>方針です。</p>
+
+        <h2 id="axes">選手・モーター・場所・天気を紐解く</h2>
+        <p>研究で重視するのは、次の4つの軸です。</p>
+        <div class="table-wrap"><table><thead><tr><th>軸</th><th>調べたいこと</th></tr></thead><tbody>
+          <tr><td><strong>選手</strong></td><td>登録番号、級別、全国・当地の成績、最近の状態</td></tr>
+          <tr><td><strong>モーター</strong></td><td>番号、2連対率、場と使用期間の組み合わせ</td></tr>
+          <tr><td><strong>競艇場</strong></td><td>場による水面・コースの傾向</td></tr>
+          <tr><td><strong>天気・水面</strong></td><td>風向、風速、波とレース結果の関係</td></tr>
+        </tbody></table></div>
+        <p>これらの条件は、それぞれ独立ではありません。例えば同じ選手でも、場所や風が変わると成績はどうなるか。そうした<strong>条件の組み合わせ</strong>を調べていきます。</p>
+        <div class="result-note"><p><strong>分析上の注意：</strong>レース終了後に記録された風や波を、投票前に分かっていたものとしてAIへ渡すと不正確な検証になります。事前に入手可能な情報と、結果を見て初めて分かる情報を分けて扱います。</p></div>
+
+        <h2 id="source-data">約30年前の公式データを読めるか</h2>
+        <p>BOAT RACE公式サイトが案内する過去の番組表・競走成績を使い、年代を離した4日間のサンプルを調査しました。</p>
+        <ul><li>1997年5月1日</li><li>2005年5月1日</li><li>2015年5月1日</li><li>2025年5月1日</li></ul>
+        <p>ここで誤解してほしくないのは、<strong>約30年分を全部取得したわけではない</strong>ということ。今回は年代別の記録を正しく読み取って、同じ形式へ変換できるかを確認する段階です。</p>
+        <p>古いファイルを読むと、モーターの数値とボート番号が区切りなく続いているなど、年代や開催場による書式差がありました。読み取り方法を修正し、確認用データベースに統合しました。</p>
+
+        <h2 id="findings">671レースを検証して分かったこと</h2>
+        <div class="research-figure" aria-label="公式サンプルの読み取り検証結果">
+          <div><small>RACES / 照合レース</small><strong>671</strong><span>4日分の公式データ</span></div>
+          <div><small>ENTRIES / 出走数</small><strong>4,026</strong><span>各艇の出走と結果を照合</span></div>
+          <div><small>RACERS / 登録番号</small><strong>1,827</strong><span>異なる選手の人数</span></div>
+        </div>
+        <div class="table-wrap"><table><thead><tr><th>検証項目</th><th>実測値</th></tr></thead><tbody>
+          <tr><td>照合できたレース</td><td>671レース</td></tr>
+          <tr><td>出走と結果を紐づけた艇</td><td>4,026艇分</td></tr>
+          <tr><td>異なる選手の登録番号</td><td>1,827人</td></tr>
+          <tr><td>対象競艇場</td><td>24場</td></tr>
+          <tr><td>1着が確認できたレース</td><td>670レース</td></tr>
+          <tr><td>1997年と2025年の両方に登場する登録番号</td><td>26人</td></tr>
+        </tbody></table></div>
+        <p>初めは欠けていると思った数値がありましたが、原因は一部の列がつながって記載されていることでした。修正後は、今回の671レースについて6艇分の出走情報と結果を対応付けられました。</p>
+        <p>さらに、1997年と2025年のサンプル日には、<strong>同じ登録番号の選手が26人</strong>いました。約28年を隔てた記録を同一選手として追跡できることが分かりました。</p>
+        <p>一方、1997年より前にデビューした選手については、それ以前のレース記録が足りません。全選手のデビューから引退までを追うという目標は、まだ達成していません。</p>
+
+        <h2 id="prediction">「当たる」と「儲かる」は分けて検証する</h2>
+        <p>研究は2段階に分けます。</p>
+        <h3>第1段階：予想の的中確率</h3>
+        <p>過去の結果を覚えさせただけでは意味がありません。学習していない<strong>その後のレース</strong>を予想させ、的中状況を確認します。特定の条件に絞る方法も、結果を見て後付けで選んでいないか検証します。</p>
+        <h3>第2段階：実際にお金が増えるか</h3>
+        <p>的中率が高くても、配当が低ければ損失になる可能性があります。そこで購入時点のオッズと予想確率を照合し、初めて購入額や回収率の研究へ進みます。</p>
+        <p>なお、公式成績に残る当たり券の払戻額だけでは、<strong>買わなかった組み合わせの当時のオッズ</strong>まで分かるわけではありません。この情報も今後の課題です。</p>
+
+        <h2 id="limits">現在の結論：勝てる証拠はまだない</h2>
+        <blockquote><p><strong>今回確認できたのは「古い公式データを年代をまたいで整理できること」まで。</strong></p><p>AIの的中率が高いとも、1万円を増やせるとも、まだ言えません。</p></blockquote>
+        <p>研究を始めたばかりなのに「AIで必勝」などと書いてしまったら、検証にはなりません。結果が良くても悪くても数字を残す。それを研究所のルールにします。</p>
+
+        <h2 id="next">次回は、膨大なデータをどう扱うか</h2>
+        <p>今後はまず、公式データを長期にわたって適切に入手する方法と利用条件を確認します。そのうえで選手の履歴、モーターの交換時期、当日の事前情報を時系列で整理します。</p>
+        <p>十分なレース数がそろったら、過去の未知レースを使って、<strong>どの条件ならどの程度の確率で予想が当たったか</strong>を公開したいと思います。うまくいかない結果も含めて、次のレポートで報告します。</p>
+        <p><strong>研究資金の1万円は、まだ口座の中です。</strong></p>
+
+        <h2 id="references">出典・注意事項</h2>
+        <ul>
+          <li><a href="https://www.boatrace.jp/owpc/pc/extra/data/download.html" target="_blank" rel="noopener noreferrer">BOAT RACE公式：過去データのダウンロード案内</a></li>
+          <li><a href="https://www.boatrace.jp/owpc/pc/extra/policy.html" target="_blank" rel="noopener noreferrer">BOAT RACE公式：サイトポリシー</a></li>
+          <li>数値は当研究所が2026年10月27日に行った、公式ファイルの4日分の読み取り検証結果です。全期間の全件検査ではありません。</li>
+          <li>この記事は研究経過の記録です。ギャンブルの利益を保証したり、投票を推奨したりするものではありません。</li>
+        </ul>
+        <div class="article-end">
+          <span>RESEARCH 003 / CONTINUING</span>
+          <h2>研究は、ここから始まります。</h2>
+          <p>次回は長期データの入手・整理と、実際に未知のレースを予測するための準備を続けます。</p>
+          <a class="article-home" href="/">はじめて研究所へ戻る →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footer-brand"><b>はじめて研究所<span>_</span></b><small>HAJIMETE KENKYUJO / FIELD RESEARCH MEDIA</small></div>
+  <div class="footer-links"><a href="/about.html">研究所について</a><a href="/privacy.html">プライバシーポリシー</a></div>
+  <div class="footer-status"><i></i> SYSTEM ONLINE</div>
+  <small class="copyright">© 2026 HAJIMETE KENKYUJO</small>
+</footer>
+<script>
+(() => {
+  const links=[...document.querySelectorAll('.toc-nav a')];
+  if(!('IntersectionObserver' in window)||!links.length)return;
+  const byId=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));
+  const sections=[...byId.keys()].map(id=>document.getElementById(id)).filter(Boolean);
+  const observer=new IntersectionObserver(entries=>{
+    const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);
+    if(!visible.length)return;
+    links.forEach(a=>a.classList.remove('active'));
+    const selected=byId.get(visible[0].target.id);
+    if(selected)selected.classList.add('active');
+  },{rootMargin:'-18% 0px -68% 0px',threshold:0});
+  sections.forEach(s=>observer.observe(s));
+})();
+</script>
+</body>
+</html>
